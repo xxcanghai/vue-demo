@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>vue.js Demo_1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" cntent="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <input type="text" v-model="todoText" @keyup.enter.p="addTodo">
+            <button v-on:click="addTodo">Add</button>
+            <li v-for="todo in todos" track-by="$index">
+                <b>{{$index}}</b> {{todo.text}}
+                <button @click="todos.$remove(todo)">Del</button>
+                <input type="checkbox" :checked="$index%2==0">
+            </li>
+        </ul>
+    </div>
+    <script src="js/1_todo.js"></script>
+
+
+</body>
+
+</html>
