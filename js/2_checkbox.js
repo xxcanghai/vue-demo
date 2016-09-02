@@ -165,3 +165,16 @@ function demo_checkbox_5() {
 }
 ;
 demo_checkbox_5();
+function demo_trans_1() {
+    var vm;
+    var vmData = {
+        isShow: true
+    };
+    var vmMethods = {};
+    vm = new Vue({
+        el: '#trans_1',
+        data: vmData,
+        methods: vmMethods
+    });
+}
+demo_trans_1();

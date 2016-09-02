@@ -168,3 +168,18 @@ function demo_checkbox_5() {
     });
 };
 demo_checkbox_5();
+
+function demo_trans_1() {
+    var vm: typeof vmData & typeof vmMethods & vuejs.Vue;
+    var vmData = {
+        isShow: true
+    };
+    var vmMethods = {
+    };
+    vm = <any>new Vue({
+        el: '#trans_1',
+        data: vmData,
+        methods: <any>vmMethods
+    });
+}
+demo_trans_1();
