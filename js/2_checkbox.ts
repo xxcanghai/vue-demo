@@ -183,3 +183,18 @@ function demo_trans_1() {
     });
 }
 demo_trans_1();
+
+// function demo_trans_2() {
+//     var vm: typeof vmData & typeof vmMethods & vuejs.Vue;
+//     var vmData = {
+//         isShow: true
+//     };
+//     var vmMethods = {
+//     };
+//     vm = <any>new Vue({
+//         el: '#trans_2',
+//         data: vmData,
+//         methods: <any>vmMethods
+//     });
+// }
+// demo_trans_2();

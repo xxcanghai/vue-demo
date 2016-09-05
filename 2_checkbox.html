@@ -74,7 +74,8 @@
             border-radius: 4px;
         }
         
-        .bs-example+ pre {
+        .bs-example+ pre,
+        .bs-example+ style+ pre {
             margin-top: -15px;
             border-top: none;
             border-top-left-radius: 0;
@@ -107,6 +108,10 @@
         
         pre.javascript::after {
             content: 'JS';
+        }
+        
+        pre.css::after {
+            content: 'CSS';
         }
     </style>
 </head>
